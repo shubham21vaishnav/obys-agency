@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Plain Light';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #ac4343;
+
+}
+
+/* #page2{
+    height: 100vh;
+    width: 100%;
+}
+#page3{
+    height: 100vh;
+    width: 100%; 
+    
+}*/
+#main {
+    position: relative;
+    background-color: #030303;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #000000;
+    padding: 25vh 10vw;
+}
+
+.line h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.line {
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+#line-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#line-part1 h2,
+#line-part1 h3 {
+    font-size: 4vw;
+    font-family: 'silk serif';
+    font-weight: 100;
+
+}
+
+.line h4 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* animation-name: anime; */
+    opacity: 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+}
+
+#line-part1 h2 {
+    text-align: right;
+    width: 5vw;
+    /* background-color: red; */
+
+}
+
+@keyframes anime {
+    0% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+
+    }
+
+    48% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+    50% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    100% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+}
