@@ -6,12 +6,7 @@ function loadingAnimation() {
         stagger: 0.25,
         duration: 0.6,
     })
-    tl.from(".line h4", {
-        y: 150,
-        stagger: 0.25,
-        duration: 0.6,
-
-    })
+    
     tl.from("#line-part1", {
         opacity: 0,
         onStart: function () {
@@ -23,9 +18,16 @@ function loadingAnimation() {
                 } else {
                     h5timer.innerHTML = grow;
                 }
-            }, 27);
+            },27);
         },
     });
+
+    tl.from(".line h4", {
+        y: 150,
+        stagger: 0.25,
+        duration: 0.6,
+
+    })
 
     tl.to(".line h4", {
         animationName: "anime",
@@ -45,7 +47,7 @@ function loadingAnimation() {
     })
 
     tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1", {
-        y:120,
+        y:140,
         stagger: 0.2,
     })
 
